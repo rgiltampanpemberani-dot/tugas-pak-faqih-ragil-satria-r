@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum - Kartu Keluarga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+        }
+
+        h2.nomor-soal {
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+        }
+
+        .kk-container {
+            background-color: #d8edf8; /* Warna latar belakang khas KK */
+            padding: 30px;
+            border: 1px solid #999;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Bagian Header Kartu Keluarga */
+        .kk-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .kk-header img {
+            width: 70px;
+            height: auto;
+            position: absolute;
+            left: 10px;
+        }
+
+        .kk-title-group {
+            text-align: center;
+        }
+
+        .kk-title-group h1 {
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 0;
+            color: #000;
+        }
+
+        .kk-title-group p {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0 0 0;
+            color: #000;
+        }
+
+        /* Styling Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: transparent;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 6px 4px;
+            font-size: 11px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: #d8edf8;
+        }
+
+        /* Lebar pembatas khusus tabel bagian bawah (Data Orang Tua) */
+        .sub-table-container {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="nomor-soal">4. Buatlah tampilan tabel kartu keluarga seperti di bawah ini! Isi dengan data keluarga masing-masing siswa!</h2>
+
+    <div class="kk-container">
+        <!-- Header Kartu Keluarga -->
+        <div class="kk-header">
+            <img src="garuda.png" alt="Logo Garuda">
+            <div class="kk-title-group">
+                <h1>KARTU KELUARGA</h1>
+                <p>No. 1234567890123456</p>
+            </div>
+        </div>
+
+        <!-- Tabel Bagian Utama (Anggota Keluarga) -->
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" style="width: 30px;">No</th>
+                    <th rowspan="2">Nama Lengkap / Nama Sembunyi</th>
+                    <th rowspan="2" style="width: 120px;">NIK</th>
+                    <th rowspan="2" style="width: 70px;">Jenis Kelamin</th>
+                    <th rowspan="2" style="width: 90px;">Tempat Lahir</th>
+                    <th rowspan="2" style="width: 80px;">Tanggal Lahir</th>
+                    <th rowspan="2" style="width: 70px;">Agama</th>
+                    <th rowspan="2" style="width: 70px;">Pendidikan</th>
+                    <th rowspan="2" style="width: 70px;">Jenis Pekerjaan</th>
+                    <th colspan="2">Hubungan Keluarga</th>
+                </tr>
+                <tr>
+                    <th style="width: 70px;">Status</th>
+                    <th style="width: 70px;">Keluarga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contoh Data Anggota Keluarga 1 -->
+                <tr>
+                    <td>1</td>
+                    <td style="text-align: left; padding-left: 6px;">AYAH KELUARGA</td>
+                    <td>1234567890123456</td>
+                    <td>LAKI-LAKI</td>
+                    <td>JAKARTA</td>
+                    <td>01-01-1980</td>
+                    <td>ISLAM</td>
+                    <td>SMA</td>
+                    <td>SWASTA</td>
+                    <td>KEPALA</td>
+                    <td>KELUARGA</td>
+                </tr>
+                <!-- Contoh Data Anggota Keluarga 2 -->
+                <tr>
+                    <td>2</td>
+                    <td style="text-align: left; padding-left: 6px;">IBU KELUARGA</td>
+                    <td>1234567890123454</td>
+                    <td>PEREMPUAN</td>
+                    <td>BANDUNG</td>
+                    <td>02-02-1985</td>
+                    <td>ISLAM</td>
+                    <td>S1</td>
+                    <td>GURU</td>
+                    <td>ISTRI</td>
+                    <td>KELUARGA</td>
+                </tr>
+                <!-- Contoh Data Anggota Keluarga 3 -->
+                <tr>
+                    <td>3</td>
+                    <td style="text-align: left; padding-left: 6px;">ANAK PERTAMA</td>
+                    <td>1234567890123452</td>
+                    <td>LAKI-LAKI</td>
+                    <td>SURABAYA</td>
+                    <td>10-10-2010</td>
+                    <td>ISLAM</td>
+                    <td>SMP</td>
+                    <td>PELAJAR</td>
+                    <td>ANAK</td>
+                    <td>KELUARGA</td>
+                </tr>
+                <!-- Baris Kosong Tambahan agar mirip format blangko asli -->
+                <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Tabel Bagian Bawah (Nama Orang Tua) -->
+        <div class="sub-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2" style="width: 30px;">No</th>
+                        <th rowspan="2">Status Perkawinan</th>
+                        <th rowspan="2">Tanggal Perkawinan</th>
+                        <th colspan="2">Status Kewarganegaraan</th>
+                        <th colspan="2">Paspor / Kitap</th>
+                        <th colspan="2">Nama Orang Tua</th>
+                    </tr>
+                    <tr>
+                        <th>Ayah</th>
+                        <th>Ibu</th>
+                        <th>No. Paspor</th>
+                        <th>No. Kitap</th>
+                        <th>Ayah</th>
+                        <th>Ibu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>KAWIN</td>
+                        <td>10-10-2005</td>
+                        <td>WNI</td>
+                        <td>WNI</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>SITI ABCDE</td>
+                        <td>NURUL FOHI</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>BELUM KAWIN</td>
+                        <td>-</td>
+                        <td>WNI</td>
+                        <td>WNI</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>NURUL FOHI</td>
+                        <td>SEKAR KLMNO</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>BELUM KAWIN</td>
+                        <td>-</td>
+                        <td>WNI</td>
+                        <td>WNI</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>SEKAR KLMNO</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
